@@ -104,9 +104,7 @@ function renderStories(c) {
   var html = '';
   var labels = ['一', '二', '三'];
   c.stories.forEach(function(s, i) {
-    var imgHtml = s.image
-      ? '<img src="' + resolveImagePath(s.image) + '" alt="' + s.title + '" class="story-image">'
-      : '<div class="story-image-placeholder">📷</div>';
+    var imgHtml = '';
     html +=
       '<div class="story-item">' +
         '<div class="story-header" data-story="' + i + '">' +
@@ -233,7 +231,11 @@ function renderHomeTimeline() {
         '</div>' +
         '<div class="timeline-dot"></div>' +
         '<div class="timeline-card" onclick="window.location.href=\'characters/' + c.id + '.html\'">' +
-          '<div class="timeline-card-image">📷</div>' +
+          '<div class="timeline-card-image">' +
+          (c.photo
+            ? '<img src="' + resolveImagePath(c.photo) + '" alt="' + c.name + '" style="width:100%;height:100%;object-fit:cover;">'
+            : '📷') +
+          '</div>' +
           '<div class="timeline-card-body">' +
             '<h3>' + c.name + '</h3>' +
             '<p class="card-identity">' + c.identity + '</p>' +

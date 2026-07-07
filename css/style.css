@@ -478,29 +478,6 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--color-primary-da
   line-height: 1.9;
 }
 
-.story-image {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: var(--radius-sm);
-  flex-shrink: 0;
-  background: var(--color-bg-warm);
-}
-
-.story-image-placeholder {
-  width: 200px;
-  height: 150px;
-  border-radius: var(--radius-sm);
-  flex-shrink: 0;
-  background: var(--color-bg-warm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  color: var(--color-border);
-  border: 1px solid var(--color-border);
-}
-
 /* === Tab 3: 红色印记 (Landmarks) === */
 .landmark-card {
   display: flex;
@@ -948,10 +925,6 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--color-primary-da
   .info-table { flex: 1; }
 
   .story-body.open { flex-direction: column; }
-  .story-image, .story-image-placeholder {
-    width: 100%;
-    height: 180px;
-  }
 
   .landmark-card { flex-direction: column; }
   .landmark-image, .landmark-image-placeholder {
