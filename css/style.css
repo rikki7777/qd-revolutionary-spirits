@@ -703,7 +703,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--color-primary-da
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center 25%;
 }
 
 .timeline-card-body { padding: 1rem 1.25rem; }
