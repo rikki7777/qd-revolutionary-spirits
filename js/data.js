@@ -92,11 +92,73 @@ var CHARACTERS = [
     period: '大革命时期',
     quote: '青岛的工人全是我的同党！',
     photo: 'images/characters/liweinong.jpg',
-    info: { name: '李慰农', jiguan: '', minzu: '', shengzu: '1895 — 1925', shenfen: '', gongxian: '' },
-    timeline: [],
-    stories: [],
-    landmarks: [],
-    media: []
+
+    info: {
+      name: '李慰农',
+      jiguan: '安徽巢县（今合肥巢湖市）',
+      minzu: '汉族',
+      shengzu: '1895 — 1925',
+      shenfen: '青岛地委书记',
+      gongxian: '全面领导青岛工运、学运'
+    },
+
+    timeline: [
+      { year: '1895', event: '出生于安徽巢县庙岗乡油坊郑村' },
+      { year: '早年', event: '赴法勤工俭学，与周恩来、邓小平等一同在巴黎创建旅欧中国少年共产党' },
+      { year: '1925', event: '化名"王伦"赴青岛接任地委书记，住进海岸路18号小楼' },
+      { year: '1925.7.26', event: '为销毁党内机密文件主动返回住所，不幸被捕' },
+      { year: '1925.7.29', event: '在团岛海边英勇就义，年仅30岁。中共中央执委会收到噩耗后，陈独秀主持全体默哀' }
+    ],
+
+    stories: [
+      {
+        title: '临危受命，扛起工运大旗',
+        content: '1925年邓恩铭遭军阀驱逐后，青岛工运面临群龙无首的危局。党中央紧急派遣刚从苏联学习归来的李慰农化名"王伦"赶赴青岛，接任地委书记。他住进海岸路18号那栋小楼，白天深入四方机厂、日商纱厂串联工人骨干，夜晚伏案起草罢工纲领，迅速将松散的各厂工人重新组织起来，扛起了青岛工运的大旗。',
+        image: 'images/stories/liweinong-gongyun.jpg'
+      },
+      {
+        title: '舍身护党，焚毁机密文件',
+        content: '1925年7月26日夜，李慰农正在小鲍岛召开地下工作会议，突遭军警大规模搜捕。为确保党内机密不落入敌手，他不顾同志们再三劝阻，毅然独自返回海岸路秘密住所。点上油灯，他将所有党员名单与绝密文件逐页撕碎投入火盆，火光映红了他的脸庞。就在最后一份文件化为灰烬之际，军警破门而入。',
+        image: 'images/stories/liweinong-wenjian.jpg'
+      },
+      {
+        title: '铁骨铮铮，血染团岛',
+        content: '狱中，敌人用尽手段逼他供出党组织名单，李慰农始终只有一句话："青岛的工人全是我的同党！"他在牢房里用法语高唱《国际歌》，歌声传遍监区。被捕仅三天后，1925年7月29日深夜，反动军警将他秘密押往团岛海滩执行枪决。他成为第一位牺牲在青岛的共产党员。远在上海的中共中央执委会收到噩耗，陈独秀含泪宣布休会，全体起立默哀。',
+        image: 'images/stories/liweinong-jiuyi.jpg'
+      }
+    ],
+
+    landmarks: [
+      {
+        id: 'dangshiguan-liweinong',
+        name: '中共青岛党史纪念馆（李慰农展区）',
+        address: '市北区海岸路18号',
+        description: '院内独立设立李慰农全身青铜雕塑，展厅完整复原他化名"王伦"开展地下工作的场景，陈列当年罢工文件复刻、狱中事迹史料。',
+        image: 'images/landmarks/liweinong-dangshiguan.jpg',
+        coordinates: { lng: 120.3265, lat: 36.0814 }
+      },
+      {
+        id: 'liweinong-park',
+        name: '李慰农公园',
+        address: '市南区西陵峡路（团岛殉难原址）',
+        description: '1957年青岛专门修建纪念公园，1989年全市青年自发捐款树立汉白玉烈士雕像，面朝胶州湾大海，园内石刻完整记录就义全过程，常年举办清明祭扫、主题党课。',
+        image: 'images/landmarks/liweinong-park.jpg',
+        coordinates: { lng: 120.3070, lat: 36.0540 }
+      }
+    ],
+
+    media: [
+      {
+        title: '《光耀齐鲁·李慰农》',
+        source: '山东卫视 · 省级党史人物独立短片',
+        url: 'http://v.iqilu.com/sdws/gyql/2021/0529/4915302.html'
+      },
+      {
+        title: '《本色》系列短视频 · 第6集：李慰农',
+        source: '灯塔党建在线 · 省级党员教育平台',
+        url: 'https://cms.dtdjzx.gov.cn/2024yxdk20250228/2886910.html'
+      }
+    ]
   },
 
   {
@@ -108,11 +170,73 @@ var CHARACTERS = [
     period: '抗日战争',
     quote: '火光烛天是我们的前程，白骨遍地是我们的作为',
     photo: 'images/characters/zhouhaoran.jpg',
-    info: { name: '周浩然', jiguan: '', minzu: '', shengzu: '1915 — 1939', shenfen: '', gongxian: '' },
-    timeline: [],
-    stories: [],
-    landmarks: [],
-    media: []
+
+    info: {
+      name: '周浩然',
+      jiguan: '即墨段泊岚瓦戈庄',
+      minzu: '汉族',
+      shengzu: '1915 — 1939',
+      shenfen: '即墨县委组织部长 · 左翼作家',
+      gongxian: '组建即墨抗日义勇军，主编进步刊物《汽笛》'
+    },
+
+    timeline: [
+      { year: '1915', event: '出生于即墨段泊岚瓦戈庄' },
+      { year: '1930s', event: '在青岛主编左翼进步刊物《汽笛》，写下数十万字战斗檄文' },
+      { year: '1937', event: '全面抗战爆发后毅然回乡，加入中国共产党' },
+      { year: '1938', event: '带队在集旺疃三官庙伏击日军，打出青岛本地抗日武装首场大胜仗' },
+      { year: '1939', event: '遭叛徒出卖被捕，壮烈牺牲，年仅24岁。他是青岛地区牺牲的第一位本土共产党人' }
+    ],
+
+    stories: [
+      {
+        title: '以笔为刀，唤醒民众',
+        content: '青年时期的周浩然是青岛知名左翼作家，主编进步刊物《汽笛》，以笔锋为武器，写下数十万文字痛斥日寇侵略、汉奸卖国。他的文章在青岛青年学生中秘密传阅，犹如黑夜中的汽笛长鸣，唤醒了一批又一批热血青年走上救亡道路。他留下的日记与诗文中，处处可见对民族命运的深切忧思和对光明前途的坚定信念。',
+        image: 'images/stories/zhouhaoran-bigong.jpg'
+      },
+      {
+        title: '投笔从戎，伏击日军',
+        content: '1937年全面抗战爆发后，周浩然毅然放下纸笔返回即墨故乡。他开办国术训练所作掩护，暗中联络爱国青年，拉起即墨抗日义勇军。1938年，他带队在集旺疃三官庙设伏，利用烟青公路的有利地形痛击日军运输队，击毙十余名敌人、烧毁敌军汽车，打出了青岛地区抗日武装的首场大胜仗，极大鼓舞了胶东军民的抗日斗志。',
+        image: 'images/stories/zhouhaoran-fuji.jpg'
+      },
+      {
+        title: '宁死不屈，血洒故土',
+        content: '此后周浩然潜伏大沽河两岸，在敌人眼皮底下建立地下联络点，为胶东根据地秘密转运药品和武器。1939年遭叛徒出卖被日伪军包围，奋力反抗后被捕。面对敌人酷刑，他宁死不降，壮烈牺牲，年仅24岁。他生前在日记中写下："火光烛天是我们的前程，白骨遍地是我们的作为。"24岁的年轻生命，用热血践行了这句誓言。',
+        image: 'images/stories/zhouhaoran-xisheng.jpg'
+      }
+    ],
+
+    landmarks: [
+      {
+        id: 'zhouhaoran-culture-park',
+        name: '周浩然文化园',
+        address: '即墨区段泊岚镇西尖庄（烈士殉难处）',
+        description: '占地50亩，配套烈士纪念馆、事迹展厅、3米高崂山花岗岩烈士雕像、15米长手书箴言纪念壁；展厅完整保存近18万字日记、诗词、刊物原稿等珍贵遗物。',
+        image: 'images/landmarks/zhouhaoran-park.jpg',
+        coordinates: { lng: 120.2860, lat: 36.4860 }
+      },
+      {
+        id: 'jimo-lying',
+        name: '即墨革命烈士陵园',
+        address: '即墨区',
+        description: '陵园主展厅开设周浩然独立展区，每年烈士纪念日举办专场纪念活动。',
+        image: 'images/landmarks/jimo-lying.jpg',
+        coordinates: { lng: 120.4500, lat: 36.3900 }
+      }
+    ],
+
+    media: [
+      {
+        title: '党史文献片《周浩然》（4集）',
+        source: '青岛市委组织部、市委党史研究院、即墨区委出品',
+        url: 'http://dsyj.qingdao.gov.cn/dszl_87/yxzl_87/202202/t20220216_4357791.shtml'
+      },
+      {
+        title: '《本色》系列短视频 · 第8集：周浩然',
+        source: '灯塔党建在线 · 省级党员教育平台',
+        url: 'https://cms.dtdjzx.gov.cn/2024yxdk20250228/2886910.html'
+      }
+    ]
   },
 
   {
@@ -124,11 +248,80 @@ var CHARACTERS = [
     period: '改革开放',
     quote: '劳动者的尊严没有赠与，只有靠自信自强',
     photo: 'images/characters/xuzhenchao.jpg',
-    info: { name: '许振超', jiguan: '', minzu: '', shengzu: '1950 —', shenfen: '', gongxian: '' },
-    timeline: [],
-    stories: [],
-    landmarks: [],
-    media: []
+
+    info: {
+      name: '许振超',
+      jiguan: '上海（籍贯山东荣成）',
+      minzu: '汉族',
+      shengzu: '1950 —',
+      shenfen: '全国劳动模范 · "人民工匠"国家荣誉称号获得者',
+      gongxian: '九次刷新集装箱装卸世界纪录，创"振超效率"'
+    },
+
+    timeline: [
+      { year: '1950', event: '生于上海' },
+      { year: '1974', event: '进入青岛港成为码头工人' },
+      { year: '1984', event: '成为青岛港第一批桥吊司机' },
+      { year: '2003.4.27', event: '带领团队首次打破世界集装箱装卸纪录，"振超效率"诞生' },
+      { year: '2006', event: '成功实施集装箱轮胎吊"油改电"技术改造' },
+      { year: '2019', event: '团队第9次刷新世界纪录，至今无人打破' },
+      { year: '2024.9.29', event: '习近平主席亲自颁授"人民工匠"国家荣誉称号' }
+    ],
+
+    stories: [
+      {
+        title: '练就"一钩准"绝活',
+        content: '1984年成为青岛港第一批桥吊司机后，许振超为提高50米高空操作精度，在集装箱吊具上挂电焊条练习"高空穿靶"，日复一日苦练，终于练就"一钩准"的真本事。此后他又钻研出"无声响操作法"，将集装箱装卸摩擦降到最低，既保护货物又延长设备寿命。这些看似不可能的绝活，都是用汗水和坚持换来的。',
+        image: 'images/stories/xuzhenchao-juehuo.jpg'
+      },
+      {
+        title: '四年攻克核心技术',
+        content: '一次唯一在用的桥吊故障停机，因核心技术被国外垄断，只能高薪聘请外方工程师维修。站在一旁连靠近都被拒绝的许振超攥紧拳头暗下决心。此后四年，他用最笨的办法倒推12块模板，靠英汉词典逐字啃下全英文电路图，读了2000多册书籍，写下近80万字读书笔记。从初中文化的码头工人，他硬是把自己磨成了桥吊专家。',
+        image: 'images/stories/xuzhenchao-gongguan.jpg'
+      },
+      {
+        title: '"振超效率"九刷世界纪录',
+        content: '2003年4月27日，许振超带领团队以单船效率339自然箱首次打破世界集装箱装卸纪录，"振超效率"自此诞生。此后他又带领团队先后8次刷新世界纪录，2019年第9次刷新纪录至今无人打破。他说："我们用实力证明，青岛港行，青岛港的码头工人行。"2024年9月29日，习近平主席亲自向他颁授"人民工匠"国家荣誉称号。',
+        image: 'images/stories/xuzhenchao-jilu.jpg'
+      }
+    ],
+
+    landmarks: [
+      {
+        id: 'xuzhenchao-studio',
+        name: '许振超技能大师工作室',
+        address: '青岛港前湾集装箱码头职工候工区',
+        description: '国家人社部揭牌的全国第一家"技能大师工作室"，面积180平方米，展示振超精神和团队先进事迹，配备门机模拟操作实训系统。',
+        image: 'images/landmarks/xuzhenchao-studio.jpg',
+        coordinates: { lng: 120.2050, lat: 36.0250 }
+      },
+      {
+        id: 'laomo-museum',
+        name: '青岛市劳模工匠展示馆',
+        address: '市北区上海路6号（工人文化宫院内）',
+        description: '山东省第一个劳模工匠主题展馆，2021年1月开馆，展示郝建秀、许振超等98个劳模工匠先进事迹，采用5D、VR等沉浸式技术。',
+        image: 'images/landmarks/laomo-museum.jpg',
+        coordinates: { lng: 120.3250, lat: 36.0800 }
+      }
+    ],
+
+    media: [
+      {
+        title: '《我的艺术清单》——"人民工匠"许振超专题',
+        source: '央视综艺频道（CCTV-3）',
+        url: 'https://tv.cctv.cn/2024/10/18/VIDEh7lbor6btwm7nhf8SYoe241018.shtml'
+      },
+      {
+        title: '《闪亮的坐标》—— 许振超专题',
+        source: '央视科教频道（CCTV-10）',
+        url: 'https://tv.cctv.com/2024/10/01/VIDErsuCUVTFV9KaCq7ptUkB241001.shtml'
+      },
+      {
+        title: '《新闻联播》——"人民工匠"许振超',
+        source: '央视综合频道（CCTV-1）',
+        url: 'https://tv.cctv.com/2024/09/28/VIDEQij3KfwdHaTxIgTbWqgl240928.shtml'
+      }
+    ]
   },
 
   {
@@ -140,11 +333,79 @@ var CHARACTERS = [
     period: '新时代',
     quote: '拼了命，我们也要建成，争的就是这口气！',
     photo: 'images/characters/zhangliangang.jpg',
-    info: { name: '张连钢', jiguan: '', minzu: '', shengzu: '1960 —', shenfen: '', gongxian: '' },
-    timeline: [],
-    stories: [],
-    landmarks: [],
-    media: []
+
+    info: {
+      name: '张连钢',
+      jiguan: '山东',
+      minzu: '汉族',
+      shengzu: '1960 —',
+      shenfen: '山东省港口集团高级别专家 · 首席科学家',
+      gongxian: '建成亚洲首个全自动化码头，带领"连钢创新团队"获"时代楷模"'
+    },
+
+    timeline: [
+      { year: '1960', event: '出生' },
+      { year: '1983', event: '毕业于武汉水运工程学院自动控制专业，分配到青岛港' },
+      { year: '2013', event: '肺癌术后临危受命，扛起自动化码头筹建重任' },
+      { year: '2017.5.11', event: '青岛港自动化码头一期开港运营，桥吊单机效率创世界纪录' },
+      { year: '2020', event: '"连钢创新团队"获中宣部授予"时代楷模"称号' },
+      { year: '2024', event: '获评"感动中国2023年度人物"' }
+    ],
+
+    stories: [
+      {
+        title: '核心技术求不来',
+        content: '1986年，码头一台桥吊发生故障，张连钢向正在维修的国外工程师请教技术问题，对方却当着他的面，把记录技术参数的小本子默默藏进口袋。那一刻的屈辱与刺痛让张连钢攥紧拳头暗下决心——核心技术买不来、求不到，中国人必须靠自己。从那天起，这个信念像钉子一样扎在他心里。',
+        image: 'images/stories/zhangliangang-hexin.jpg'
+      },
+      {
+        title: '肺癌术后，破釜沉舟',
+        content: '2013年，刚做完肺癌手术在家休养的张连钢接到公司党委的电话。不顾家人反对和医生劝阻，他毅然扛起自动化码头筹建重任。面对国外专家"中国人想靠自己建设自动化码头可能性为零"的断言，他在动员会上对团队说："如果建不成了，我就去跳海，咱们排着队去跳海。"25名技术骨干中23名是共产党员，党支部就建在项目现场。',
+        image: 'images/stories/zhangliangang-pofu.jpg'
+      },
+      {
+        title: '把不可能变成可能',
+        content: '仅用15个月完成国外至少需要3年的设计任务，又用3年半完成国外需8到10年的建设任务。2017年5月11日，青岛港自动化码头一期开港运营，桥吊单机效率26.1自然箱/小时，创世界自动化集装箱码头商业运营首船作业最高效率。他用实际行动把国外专家的"不可能"变成了响当当的中国速度。2020年获中宣部授予"时代楷模"称号，2024年获评"感动中国2023年度人物"。',
+        image: 'images/stories/zhangliangang-keneng.jpg'
+      }
+    ],
+
+    landmarks: [
+      {
+        id: 'liangang-exhibition',
+        name: '"连钢创新团队"展馆',
+        address: '青岛港前湾港区全自动化码头',
+        description: '约1500平方米，分"科技报国""平凡英雄""时代楷模""自主创新"四个展区，采用3D全息投影、雕塑模型、电子沙盘等现代化展示手段。2021年入选全国爱国主义教育示范基地。',
+        image: 'images/landmarks/liangang-exhibition.jpg',
+        coordinates: { lng: 120.2050, lat: 36.0200 }
+      },
+      {
+        id: 'auto-terminal-edu',
+        name: '山东港口青岛港自动化码头科技创新教育基地',
+        address: '青岛港前湾港区',
+        description: '山东省党员教育现场教学基地，室内约1200平方米，藏品100余件，可近距离观摩16台桥吊、78台轨道吊、83台AGV全自动作业场景。',
+        image: 'images/landmarks/auto-terminal-edu.jpg',
+        coordinates: { lng: 120.2030, lat: 36.0180 }
+      }
+    ],
+
+    media: [
+      {
+        title: '《时代楷模发布厅》——"连钢创新团队"专场',
+        source: '央视综合频道（CCTV-1）',
+        url: 'https://tv.cctv.com/2020/12/30/VIDE96zoJl9QVRwXulfhzTsM201230.shtml'
+      },
+      {
+        title: '《时代楷模——连钢创新团队》公益广告',
+        source: '中央广播电视总台出品',
+        url: 'https://1118.cctv.com/2021/04/07/ARTIpZfIP7TD8xix4lM96VA3210407.shtml'
+      },
+      {
+        title: '《感动中国2023年度人物》—— 张连钢',
+        source: '央视综合频道（CCTV-1）',
+        url: 'https://tv.cctv.com/2024/04/'
+      }
+    ]
   },
 
   {
@@ -156,11 +417,70 @@ var CHARACTERS = [
     period: '新时代',
     quote: '个人力量有限，只有紧紧融入支部、紧跟支部引领，才能真正带动乡村蜕变',
     photo: 'images/characters/gaoweiyu.jpg',
-    info: { name: '高维玉', jiguan: '', minzu: '', shengzu: '1966 —', shenfen: '', gongxian: '' },
-    timeline: [],
-    stories: [],
-    landmarks: [],
-    media: []
+
+    info: {
+      name: '高维玉',
+      jiguan: '莱西市日庄镇沟东新村',
+      minzu: '汉族',
+      shengzu: '1966 —',
+      shenfen: '沟东新村党委书记 · 村委会主任',
+      gongxian: '带领省定贫困村蝶变为全国乡村振兴示范村，获"全国劳动模范"'
+    },
+
+    timeline: [
+      { year: '1966', event: '出生于莱西市日庄镇沟东新村' },
+      { year: '1985', event: '高中毕业后放弃外地工作机会，毅然回到家乡' },
+      { year: '2014', event: '带领支部外出调研，走遍省内30多个村庄，确定发展葡萄产业' },
+      { year: '2025.4.28', event: '获授"全国劳动模范"称号' },
+      { year: '2026.1', event: '获评"青岛榜样"' }
+    ],
+
+    stories: [
+      {
+        title: '十八岁返乡扎根',
+        content: '1985年高中毕业后，高维玉放弃外地优质发展机会，毅然回到贫穷落后的沟东村。彼时沟东新村被认定为省定贫困村，村集体经济为零收入，年轻人纷纷外出打工。面对乡亲们"读了书还回来干啥"的不解，他只说了一句："这是我的家。"从此他紧跟村党支部的脚步建设家乡，一干就是四十余年。',
+        image: 'images/stories/gaoweiyu-fanxiang.jpg'
+      },
+      {
+        title: '带头试种葡萄拔穷根',
+        content: '2014年起，高维玉带领支部成员外出调研，走遍省内30多个村庄，最终确定发展葡萄产业。为打消群众顾虑，他带领10多名党员干部先干起来，带头把自家地改种葡萄。他创新推出"党组织+共富公司+合作社+农户"模式，让村民既能拿土地流转费又能在葡萄园务工赚钱。如今全村葡萄种植规模超1500亩，年产值近4亿元。',
+        image: 'images/stories/gaoweiyu-putao.jpg'
+      },
+      {
+        title: '贫困村蝶变示范村',
+        content: '在高维玉的带领下，沟东新村集体经济从零增长至240万元，村民年均收入达3.6万元，翻了6倍。他与23个薄弱自然村联建形成万亩葡萄产业集群，连续举办7次环湖葡萄节。他创新基层治理，推行道德积分制，让村民自己评议身边好人好事。沟东新村先后获评全国乡村治理示范村、山东省乡村振兴示范村。他说："个人力量有限，只有紧紧融入支部、紧跟支部引领，才能真正带动乡村蜕变。"',
+        image: 'images/stories/gaoweiyu-diebian.jpg'
+      }
+    ],
+
+    landmarks: [
+      {
+        id: 'goudong-new-village',
+        name: '莱西市日庄镇沟东新村',
+        address: '莱西市日庄镇',
+        description: '获评全国乡村治理示范村、山东省乡村振兴示范村、山东省美丽村居、全省干事创业好班子。村内设有投资70万元建设的幸福大食堂，解决70岁以上老人就餐问题。常年接待各级考察团参观学习葡萄产业基地和乡村治理经验。',
+        image: 'images/landmarks/goudong-new-village.jpg',
+        coordinates: { lng: 120.3800, lat: 36.8800 }
+      }
+    ],
+
+    media: [
+      {
+        title: '"青岛榜样"高维玉专题',
+        source: '莱西市人民政府官网',
+        url: 'http://www.laixi.gov.cn/xwzx_16/lxyw_16/202601/t20260107_10435986.shtml'
+      },
+      {
+        title: '《高维玉：民本打通致富之路》',
+        source: '人民网山东频道',
+        url: 'http://sd.people.com.cn/n2/2025/0917/c413021-41354432.html'
+      },
+      {
+        title: '《四十载绘就乡村振兴答卷，高维玉获全国劳动模范》',
+        source: '齐鲁晚报·齐鲁壹点',
+        url: 'https://www.qlwb.com.cn/'
+      }
+    ]
   }
 ];
 
