@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', function() {
   initNavigation();
 });
 
+/* === 辅助函数：图片路径解析 === */
+function resolveImagePath(path) {
+  if (window.location.pathname.indexOf('/characters/') !== -1) {
+    return '../' + path;
+  }
+  return path;
+}
+
 /* === Navigation === */
 function initNavigation() {
   // Mobile nav toggle
@@ -44,7 +52,7 @@ function renderCharHeader(c) {
   var header = document.getElementById('char-header');
   if (!header) return;
   var photoHtml = c.photo
-    ? '<img src="' + c.photo + '" alt="' + c.name + '" class="char-photo">'
+    ? '<img src="' + resolveImagePath(c.photo) + '" alt="' + c.name + '" class="char-photo">'
     : '<div class="char-photo-placeholder">📷</div>';
   header.innerHTML =
     '<div class="container">' +
@@ -62,7 +70,7 @@ function renderBio(c) {
   var el = document.getElementById('tab-bio');
   if (!el) return;
   var photoHtml = c.photo
-    ? '<img src="' + c.photo + '" alt="' + c.name + '" class="bio-photo">'
+    ? '<img src="' + resolveImagePath(c.photo) + '" alt="' + c.name + '" class="bio-photo">'
     : '<div class="bio-photo-placeholder">📷</div>';
 
   var labels = { name: '姓名', jiguan: '籍贯', minzu: '民族', shengzu: '生卒', shenfen: '身份', gongxian: '贡献' };
@@ -97,7 +105,7 @@ function renderStories(c) {
   var labels = ['一', '二', '三'];
   c.stories.forEach(function(s, i) {
     var imgHtml = s.image
-      ? '<img src="' + s.image + '" alt="" class="story-image">'
+      ? '<img src="' + resolveImagePath(s.image) + '" alt="' + s.title + '" class="story-image">'
       : '<div class="story-image-placeholder">📷</div>';
     html +=
       '<div class="story-item">' +
@@ -140,8 +148,16 @@ function renderLandmarks(c) {
   var html = '';
   c.landmarks.forEach(function(l) {
     var imgHtml = l.image
-      ? '<img src="' + l.image + '" alt="" class="landmark-image">'
+      ? '<img src="' + resolveImagePath(l.image) + '" alt="' + l.name + '" class="landmark-image">'
       : '<div class="landmark-image-placeholder">📷</div>';
+    var metaHtml = '';
+    if (l.hours || l.ticket) {
+      metaHtml = '<p class="landmark-meta">';
+      if (l.hours) metaHtml += '🕐 ' + l.hours;
+      if (l.hours && l.ticket) metaHtml += ' &nbsp;|&nbsp; ';
+      if (l.ticket) metaHtml += '🎫 ' + l.ticket;
+      metaHtml += '</p>';
+    }
     html +=
       '<div class="landmark-card" data-loc="' + l.id + '" onclick="window.location.href=\'../map.html?loc=' + l.id + '\'">' +
         imgHtml +
@@ -149,7 +165,7 @@ function renderLandmarks(c) {
           '<h3>🏛️ ' + l.name + '</h3>' +
           '<p class="landmark-address">📍 ' + l.address + '</p>' +
           '<p class="landmark-desc">' + l.description + '</p>' +
-          '<p class="landmark-meta">🕐 ' + l.hours + ' &nbsp;|&nbsp; 🎫 ' + l.ticket + '</p>' +
+          metaHtml +
         '</div>' +
       '</div>';
   });

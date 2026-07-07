@@ -104,10 +104,10 @@ var CHARACTERS = [
 
     timeline: [
       { year: '1895', event: '出生于安徽巢县庙岗乡油坊郑村' },
-      { year: '早年', event: '赴法勤工俭学，与周恩来、邓小平等一同在巴黎创建旅欧中国少年共产党' },
+      { year: '1919', event: '赴法勤工俭学，与周恩来、邓小平等一同在巴黎创建旅欧中国少年共产党' },
       { year: '1925', event: '化名"王伦"赴青岛接任地委书记，住进海岸路18号小楼' },
-      { year: '1925.7.26', event: '为销毁党内机密文件主动返回住所，不幸被捕' },
-      { year: '1925.7.29', event: '在团岛海边英勇就义，年仅30岁。中共中央执委会收到噩耗后，陈独秀主持全体默哀' }
+      { year: '1925', event: '为销毁党内机密文件主动返回住所，不幸被捕' },
+      { year: '1925', event: '在团岛海边英勇就义，年仅30岁。中共中央执委会收到噩耗后，陈独秀主持全体默哀' }
     ],
 
     stories: [
@@ -403,7 +403,7 @@ var CHARACTERS = [
       {
         title: '《感动中国2023年度人物》—— 张连钢',
         source: '央视综合频道（CCTV-1）',
-        url: 'https://tv.cctv.com/2024/04/'
+        url: 'http://tv.cctv.com/2024/04/08/VIDEPz55WbRr1rMtIA5HIiRd240408.shtml'
       }
     ]
   },
@@ -478,7 +478,7 @@ var CHARACTERS = [
       {
         title: '《四十载绘就乡村振兴答卷，高维玉获全国劳动模范》',
         source: '齐鲁晚报·齐鲁壹点',
-        url: 'https://www.qlwb.com.cn/'
+        url: 'http://www.qlwb.com.cn/detail/26021377.html'
       }
     ]
   }
