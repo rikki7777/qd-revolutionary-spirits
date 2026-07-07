@@ -696,6 +696,14 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--color-primary-da
   justify-content: center;
   font-size: 2.5rem;
   color: var(--color-border);
+  overflow: hidden;
+}
+
+.timeline-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .timeline-card-body { padding: 1rem 1.25rem; }
