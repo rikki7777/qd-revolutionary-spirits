@@ -195,3 +195,36 @@ function initTabs() {
     });
   });
 }
+
+/* === Homepage Timeline === */
+function renderHomeTimeline() {
+  var el = document.getElementById('home-timeline');
+  if (!el) return;
+
+  var orderedPeriods = ['建党初期', '大革命时期', '抗日战争', '改革开放', '新时代'];
+  var orderedChars = [];
+  orderedPeriods.forEach(function(p) {
+    var chars = getCharactersByPeriod(p);
+    chars.forEach(function(c) { orderedChars.push(c); });
+  });
+
+  var html = '';
+  orderedChars.forEach(function(c) {
+    html +=
+      '<div class="home-timeline-item">' +
+        '<div class="timeline-period-label">' +
+          '<span class="period-badge">' + c.period + '</span>' +
+        '</div>' +
+        '<div class="timeline-dot"></div>' +
+        '<div class="timeline-card" onclick="window.location.href=\'characters/' + c.id + '.html\'">' +
+          '<div class="timeline-card-image">📷</div>' +
+          '<div class="timeline-card-body">' +
+            '<h3>' + c.name + '</h3>' +
+            '<p class="card-identity">' + c.identity + '</p>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+  });
+
+  el.innerHTML = html;
+}

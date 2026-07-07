@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>红韵青岛·数智传薪</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-brand">🏮 红韵青岛</a>
+      <button class="nav-toggle" aria-label="菜单">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">首页</a></li>
+        <li class="nav-dropdown">
+          <a href="#">人物 ▾</a>
+          <div class="nav-dropdown-menu">
+            <div class="dropdown-period">建党初期 / 大革命</div>
+            <a href="characters/dengenming.html">邓恩铭</a>
+            <a href="characters/liweinong.html">李慰农</a>
+            <div class="dropdown-period">抗日战争</div>
+            <a href="characters/zhouhaoran.html">周浩然</a>
+            <div class="dropdown-period">改革开放</div>
+            <a href="characters/xuzhenchao.html">许振超</a>
+            <div class="dropdown-period">新时代</div>
+            <a href="characters/zhangliangang.html">张连钢</a>
+            <a href="characters/gaoweiyu.html">高维玉</a>
+          </div>
+        </li>
+        <li><a href="map.html">红色地标地图</a></li>
+        <li><a href="about.html">关于支部</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>薪火相传，红韵永续</h1>
+      <div class="hero-divider"></div>
+      <p class="subtitle">学·做在支部</p>
+      <p class="branch-name">计算机科学与技术学院专硕第二党支部</p>
+    </div>
+  </section>
+
+  <section class="timeline-section">
+    <div class="container">
+      <h2 class="serif">青岛先驱 · 薪火相传</h2>
+      <div class="home-timeline" id="home-timeline"></div>
+    </div>
+  </section>
+
+  <footer style="text-align:center;padding:2rem 0;color:var(--color-text-muted);font-size:var(--font-size-xs);border-top:1px solid var(--color-border);">
+    <p>计算机科学与技术学院专硕第二党支部 · 红韵青岛·数智传薪</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      renderHomeTimeline();
+    });
+  </script>
+</body>
+</html>
