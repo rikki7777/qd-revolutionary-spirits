@@ -901,3 +901,104 @@ h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--color-primary-da
   height: 100%;
   object-fit: contain;
 }
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  :root {
+    --font-size-3xl: 1.75rem;
+    --font-size-2xl: 1.5rem;
+  }
+
+  /* 首页 Hero */
+  .hero { padding: 3rem 0 2.5rem; }
+  .hero h1 { font-size: 1.5rem; letter-spacing: 4px; }
+  .hero .subtitle { font-size: var(--font-size-sm); }
+
+  /* 首页时间轴 -> 改为左对齐单列 */
+  .home-timeline::before { left: 20px; }
+  .home-timeline-item {
+    flex-direction: row !important;
+    padding-left: 3rem;
+  }
+  .home-timeline-item:nth-child(odd),
+  .home-timeline-item:nth-child(even) {
+    flex-direction: row !important;
+  }
+  .timeline-dot { left: 20px; }
+  .timeline-card { width: 100%; }
+  .timeline-period-label { display: none; }
+
+  /* 人物详情页 */
+  .char-header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .char-photo, .char-photo-placeholder {
+    width: 120px;
+    height: 150px;
+  }
+  .bio-layout { flex-direction: column; }
+  .bio-sidebar {
+    width: 100%;
+    display: flex;
+    gap: var(--space-md);
+    flex-direction: row;
+  }
+  .bio-photo, .bio-photo-placeholder {
+    width: 120px;
+    height: 150px;
+    flex-shrink: 0;
+  }
+  .info-table { flex: 1; }
+
+  .story-body.open { flex-direction: column; }
+  .story-image, .story-image-placeholder {
+    width: 100%;
+    height: 180px;
+  }
+
+  .landmark-card { flex-direction: column; }
+  .landmark-image, .landmark-image-placeholder {
+    width: 100%;
+    height: 180px;
+  }
+
+  .media-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  /* Tabs */
+  .tabs-nav .container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .tab-btn {
+    padding: 0.625rem 1rem;
+    font-size: var(--font-size-xs);
+    white-space: nowrap;
+  }
+
+  /* 地图页 */
+  .map-sidebar { flex-direction: column; }
+  .landmark-list {
+    width: 100%;
+    max-height: 200px;
+  }
+  #map { height: 350px; }
+
+  /* 关于页 */
+  .photo-wall { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.25rem; letter-spacing: 2px; }
+  .container { padding: 0 var(--space-md); }
+  .photo-wall { grid-template-columns: repeat(2, 1fr); }
+  .bio-sidebar { flex-direction: column; }
+  .bio-photo, .bio-photo-placeholder {
+    width: 100%;
+    height: 200px;
+  }
+}
