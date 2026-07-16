@@ -2,3 +2,9 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# 项目开发文件（本地保留，不上传公开仓库）
+CLAUDE.md
+.claude/
+docs/
+素材及要求/
